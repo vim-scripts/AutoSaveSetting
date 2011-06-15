@@ -1,0 +1,20 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3626
+
+Auto-saving the gVim window's size and position from previous launch (including a maximized gVim in a multi-monitors setup) and makes all the settings in the gVim's menu stick. If you change your font, it'll stick. Change your colorscheme? it'll stick, too. Enable/Disable the menu, toolbar and scrollbars? it'll stick.
+
+Tested on standard installations of MacOSX, Ubuntu and Windows.
+
+Only works with the GUI version of Vim. Can be made to work with terminal but it just makes more sense for the GUI version.
+
+Options:
+========
+.vimrc options
+
+>>    let g:setting_restore = 1
+If non-zero, AutoSaveSetting is enabled at startup. Enabled by default (1).
+
+>>    let g:setting_by_vim_instance = 1
+If non-zero, save a different set of settings for each Vim instance. Enabled by default (1).
+
+Git repo:
+https://github.com/kien/autosavesetting.vim
