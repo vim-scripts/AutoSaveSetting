@@ -6,9 +6,12 @@ Tested on standard installations of MacOSX, Ubuntu and Windows.
 
 Only works with the GUI version of Vim. Can be made to work with terminal but it just makes more sense for the GUI version.
 
-Options:
-========
-.vimrc options
+Git repository:
+https://github.com/kien/autosavesetting.vim
+
+================
+.vimrc options:
+================
 
 >>    let g:setting_restore = 1
 If non-zero, AutoSaveSetting is enabled at startup. Enabled by default (1).
@@ -16,5 +19,5 @@ If non-zero, AutoSaveSetting is enabled at startup. Enabled by default (1).
 >>    let g:setting_by_vim_instance = 1
 If non-zero, save a different set of settings for each Vim instance. Enabled by default (1).
 
-Git repo:
-https://github.com/kien/autosavesetting.vim
+>>    let g:setting_ignores_vimrc = 1
+If non-zero, settings will persist after sourcing vimrc. Enabled by default (1).
